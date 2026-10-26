@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background-color: white;
+    color: black;
+}
+
+.inicio {
+    text-align: center;
+    padding: 50px;
+    background-color: #c1e5df;
+}
+
+.inicio h1 {
+    color: #28675c;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #76a69c;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.boton:hover {
+    background-color: #28675c;
+}
+
+.agenda {
+    padding: 30px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.agenda h1 {
+    text-align: center;
+    color: #28675c;
+}
+
+.agenda h2 {
+    background-color: #c1e5df;
+    color: #28675c;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.agenda h3 {
+    color: #28675c;
+    margin-bottom: 5px;
+}
+
+.agenda p {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.agenda h3, .agenda p {
+    line-height: 1.5;
+}

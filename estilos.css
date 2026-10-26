@@ -1,0 +1,544 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #000;
+    background-color: #fff;
+}
+
+.encabezado{
+    min-height: 146px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 35px;
+    padding: 15px 5%;
+    background-color: white;
+}
+
+
+.logo{
+    width: 190px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+width: 120px;
+height: 115px;
+object-fit: contain;
+}
+
+.titulo{
+    flex: 1;
+}
+
+.titulo h1{
+    font-size: clamp(24px, 2.8vw, 36px);
+    line-height: 1.3;
+    font-weight: bold;
+}
+
+.menu{
+    min-height: 53px;
+    background-color: #c0e5de;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: clamp(15px, 4vw, 50px);
+    padding: 8px 15px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #30685e;
+    font-size: 29px;
+}
+
+.menu a:hover{
+    color: white;
+}
+
+.banner{
+    width: 100%;
+    min-height: 235px;
+    margin-top: 11px;
+    margin-bottom: 12px;
+    background-image: url(fotos/Gemini_Generated_Image_lfkbyrlfkbyrlfkb.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: stretch;
+}
+
+.informacion{
+    margin-left: 7%;
+    width: 40%;
+    min-width: 0;
+    background-color: rgba(255, 255, 255, 0.82);
+    text-align: center;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.informacion h2{
+    font-size: 29px;
+    margin: 0 0 8px;
+}
+
+.informacion p{
+    font-size: 27px;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.botones{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.botones a{
+    flex: 1;
+    width: 42%;
+    padding: 5px;
+    background-color: #b59a8e;
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    text-align: center;
+}
+
+.botones a:hover{
+    background-color: #9a7e72;
+}
+
+.turismo{
+    background-color: #79a99e;
+    color: white;
+    text-align: center;
+    padding: 9px 15px 7px;
+}
+
+.turismo h2{
+    font-size: 30px;
+}
+
+.turismo p{
+    font-size: clamp(19px, 2.3vw, 29px);
+    line-height: 1.25;
+}
+
+.turismo img{
+    width: 50px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.wpp{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.wpp img{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.wpp p{
+    margin: 0;
+    font-size: 29px;
+    line-height: 1.2;
+}
+
+.conferencistas{
+    padding: 15px 14px 16px;
+    width: 100%;
+}
+
+.conferencistas h2{
+    text-align: center;
+    color: #30685e;
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.galeria{
+    display: grid;
+    gap: 5px;
+    width: 100%;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.conferencista{
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    text-align: center;
+}
+
+.conferencista img{
+    display: block;
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+.conferencista p{
+    width: 100%;
+    font-size: 14px;
+    margin-top: 5%;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.pie-pagina{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #c0e5de;
+    min-height: 260px;
+}
+
+.pie-pagina section{
+    padding: 14px 9%;
+}
+
+.pie-pagina h2{
+    color: #30685e;
+    font-size: 29px;
+    margin-bottom: 4px;
+}
+
+.patrocinadores{
+    border-right: 5px solid #000;
+}
+
+.patrocinadores ul, .redes-sociales ul {
+    list-style: none;
+}
+
+.patrocinadores li{
+    font-size: 23px;
+    line-height: 1.3;
+}
+
+.redes-sociales li{
+    margin: 7px 0;
+}
+
+.redes-sociales a{
+    color: #000;
+    text-decoration: none;
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.redes-sociales img{
+    width: 50px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.icono{
+    width: 38px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+@media screen and (min-width:768px) and (max-width: 800px) {
+
+    .encabezado {
+        min-height: auto;
+        gap: 15px;
+        padding: 12px 3%;
+    }
+
+    .logo {
+        width: 110px;
+    }
+
+    .logo img {
+        width: 90px;
+        height: 85px;
+    }
+
+    .titulo h1 {
+        font-size: 25px;
+    }
+
+    .menu {
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+
+    .menu a {
+        font-size: 21px;
+    }
+
+    .banner {
+        min-height: 250px;
+    }
+
+    .informacion {
+        width: 48%;
+        margin-left: 3%;
+        padding: 12px;
+    }
+
+    .informacion h2 {
+        font-size: 23px;
+    }
+
+    .informacion p {
+        font-size: 21px;
+    }
+
+    .botones {
+        gap: 10px;
+    }
+
+    .botones a {
+        font-size: 18px;
+    }
+
+    .turismo h2 {
+        font-size: 26px;
+    }
+
+    .turismo p {
+        font-size: 21px;
+    }
+
+    .conferencistas {
+        padding: 12px 3%;
+    }
+
+    .conferencistas h2 {
+        font-size: 28px;
+    }
+
+    .galeria {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px 15px;
+    }
+
+    .conferencista {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conferencista img {
+        width: 100%;
+        height: 125px;
+        object-fit: cover;
+    }
+
+    .conferencista p {
+        font-size: 17px;
+    }
+
+    .pie-pagina {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .pie-pagina section {
+        padding: 14px 5%;
+    }
+
+    .pie-pagina h2 {
+        font-size: 24px;
+    }
+
+    .patrocinadores li,
+    .redes-sociales a {
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+
+    .encabezado {
+        min-height: auto;
+        gap: 8px;
+        padding: 10px 3%;
+    }
+
+    .logo {
+        width: 70px;
+    }
+
+    .logo img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .titulo h1 {
+        font-size: 17px;
+        line-height: 1.25;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        gap: 8px 18px;
+        padding: 10px;
+    }
+
+    .menu a {
+        font-size: 16px;
+    }
+
+    .banner {
+        min-height: 240px;
+        background-position: center;
+    }
+
+    .informacion {
+        margin-left: 2%;
+        width: 68%;
+        padding: 10px 7px;
+    }
+
+    .informacion h2 {
+        font-size: 18px;
+    }
+
+    .informacion p {
+        font-size: 16px;
+    }
+
+    .botones {
+        gap: 7px;
+        margin-top: 12px;
+    }
+
+    .botones a {
+        font-size: 14px;
+        padding: 6px 3px;
+    }
+
+    .turismo {
+        padding: 12px 10px;
+    }
+
+    .turismo h2 {
+        font-size: 21px;
+    }
+
+    .turismo p {
+        font-size: 17px;
+    }
+    .wpp {
+    gap: 8px;
+    }
+
+    .wpp img {
+    width: 28px;
+    height: 28px;
+    }
+
+    .wpp p {
+    font-size: 19px;
+    }
+
+    .conferencistas {
+        padding: 12px 4%;
+    }
+
+    .conferencistas h2 {
+        font-size: 24px;
+    }
+
+    .galeria {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px 12px;
+    }
+
+    .conferencista {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conferencista img {
+        width: 100%;
+        height: 115px;
+        object-fit: cover;
+    }
+
+    .conferencista p {
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    .pie-pagina {
+        grid-template-columns: 1fr;
+    }
+
+    .pie-pagina section {
+        padding: 14px 7%;
+    }
+
+    .pie-pagina h2 {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .patrocinadores {
+        border-right: none;
+    }
+
+    .patrocinadores ul {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .patrocinadores li {
+        font-size: 17px;
+    }
+
+    .redes-sociales {
+        border-top: 4px solid #000;
+    }
+
+    .redes-sociales ul {
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .redes-sociales a {
+        font-size: 18px;
+    }
+
+    .redes-sociales img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
